@@ -1,41 +1,34 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <meta name="author" content="ZXing for JS"> -->
+  <meta name="author" content="ZXing for JS">
 
   <title>TAPNow QR Code Scanner</title>
 
   <link rel="preload" as="style" onload="this.rel='stylesheet';this.onload=null" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
   <link rel="preload" as="style" onload="this.rel='stylesheet';this.onload=null" href="https://unpkg.com/normalize.css@8.0.0/normalize.css">
   <link rel="preload" as="style" onload="this.rel='stylesheet';this.onload=null" href="https://unpkg.com/milligram@1.3.0/dist/milligram.min.css">
-  <style type="text/css">
-    .button{
-      background-color: #00a300;
-    }
-  </style>
 </head>
 
 <body>
-<center>
+    <center>
   <main class="wrapper" style="padding-top:2em">
 
     <section class="container" id="demo-content">
       <h1 class="title">TAPNow QR Code Scanner</h1>
 
       <div>
-        <video id="video" autoplay></video>
+        <video id="video" width="300" height="200" style="border: 1px solid gray"></video>
       </div>
 
-      <div>
-        <a class="button" id="startButton">SCAN</a>
-        <a class="button" id="resetButton">RESET</a>
-        <a class="button" id="resetButton">SAVE</a>
-      </div>
-
-      
+        <div>
+            <a class="button" id="startButton">START</a>
+            <a class="button" id="resetButton">RESET</a>
+            <a class="button" id="">SAVE</a>
+        </div>
 
       <div id="sourceSelectPanel" style="display:none">
         <label for="sourceSelect">Change video source:</label>
@@ -53,11 +46,11 @@
 
       <label>Result:</label>
       <pre><code id="result"></code></pre>
+
     </section>
 
     <footer class="footer">
-      <section class="container">
-      </section>
+
     </footer>
 
   </main>
